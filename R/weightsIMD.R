@@ -33,7 +33,7 @@ function(data,Y,X1,X2,subject,death,time,impute=0,name="weight")
     data2 <- data[which(!is.na(data[,Y])),c(subject,time,X1,X2,Y,death)]   
     wide <- reshape(data2, v.names=Y, idvar=subject, timevar=time, direction = "wide")
 
-    y.t <- paste(Y,unique(data[,time]),sep=".")
+    y.t <- paste(Y,sort(unique(data[,time])),sep=".")
     nt <- length(y.t)
 
     ## indicateur obs chez les vivants
