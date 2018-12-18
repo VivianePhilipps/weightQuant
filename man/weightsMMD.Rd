@@ -112,9 +112,6 @@ logit(lambda_{ikk}) = b_{0k} + b_1 X1_{ik} + b_2 X2_{ik} +  b_3 Y_{i(k-1)} + b_4
 \item{se}{a list containing the standard erros of the estimates
   contained in coef, in the same order.}
 }
-%\references{
-%% ~put references to the literature/web site here ~
-%}
 \author{
 Viviane Philipps, Marion Medeville, Anais Rouanet, Helene Jacqmin-Gadda
 }

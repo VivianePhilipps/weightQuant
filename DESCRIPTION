@@ -2,7 +2,7 @@ Package: weightQuant
 Type: Package
 Title: Weights for Incomplete Longitudinal Data and Quantile Regression
 Version: 1.0
-Date: 2018-03-14
+Date: 2018-12-18
 Author: Viviane Philipps
 Maintainer: Viviane Philipps <Viviane.Philipps@u-bordeaux.fr>
 Description: Estimation of observation-specific weights for incomplete longitudinal data and bootstrap procedure for weighted quantile regressions.
