@@ -5,7 +5,7 @@ function(x,m)
         if(length(m$tau)<2) stop("At least 2 quantile regressions should be estimated in model m")
         
         noms <- rownames(x)[-nrow(x)]
-        tabnoms <- matrix(unlist(strsplit(noms,split="_")),ncol=3,byrow=TRUE)
+        tabnoms <- matrix(unlist(str_split(noms,split="_", n=3)),ncol=3,byrow=TRUE)
         
         tau <- unique(as.numeric(tabnoms[,2]))
         if(any(tau != m$tau)) stop("Quantiles should be the same in model m as in the bootstrap results")
