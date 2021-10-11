@@ -2,7 +2,7 @@ summary.bootwrq <-
 function(object,...)
     {
         noms <- rownames(object)[-nrow(object)]
-        tabnoms <- matrix(unlist(str_split(rownames(object)[-nrow(object)],split="_", n=3)),ncol=3,byrow=TRUE)
+        tabnoms <- matrix(unlist(str_split(rownames(object)[-nrow(object)], pattern="_", n=3)),ncol=3,byrow=TRUE)
 
         tau <- unique(as.numeric(tabnoms[,2]))
 
