@@ -4,5 +4,6 @@ importFrom("stats", "coef", "formula", "glm", "pnorm", "predict", "reshape", "ru
 importFrom("utils", "write.table")
 importFrom("parallel","makeCluster","stopCluster")
 importFrom("doParallel","registerDoParallel")
+importFrom("stringr", "str_split")
 
 S3method(summary,bootwrq)

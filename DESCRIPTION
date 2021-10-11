@@ -7,6 +7,6 @@ Author: Viviane Philipps
 Maintainer: Viviane Philipps <Viviane.Philipps@u-bordeaux.fr>
 Description: Estimation of observation-specific weights for incomplete longitudinal data and bootstrap procedure for weighted quantile regressions.
 License: GPL (>= 2.0)
-Depends: quantreg, foreach, doParallel
+Depends: quantreg, foreach, doParallel, stringr
 LazyLoad: yes
 LazyData: true

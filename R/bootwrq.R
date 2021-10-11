@@ -36,6 +36,7 @@ function(B, form, tau, data, Y, X1=NULL, X2=NULL, subject, death, time, interval
     if(!(death %in% colnames(data))) stop("data should contain death")
     if(!is.character(time)) stop("time should be a character")
     if(!(time %in% colnames(data))) stop("data should contain time")
+    if(is.null(interval.death)) interval.death <- 0
     if(!is.null(interval.death)){ if(!all(is.numeric(interval.death))) stop("interval.death should only contain numeric values")}
     if(!is.null(impute)){ if(!is.numeric(impute)) stop("impute should be numeric")}
     if(!is.null(weight))
