@@ -29,6 +29,9 @@ obtain standard erros of weighted quantile regressions.
   
   \Sexpr[stage=build,results=rd]{paste("\\\\preformatted{", paste(if(!is.null(lb$info[[2]])) lb$info[[2]] else "No entries",collapse="\\n"), "}", sep="")}
 }
+\references{
+Jacqmin-Gadda H, Rouanet A, Mba RD, Philipps V, Dartigues J-F. Quantile regression for incomplete longitudinal data with selection  by death. Statistical Methods in Medical Research. 2020;29(9):2697-2716. doi:10.1177/0962280220909986
+}
 \author{
 Viviane Philipps
 }
